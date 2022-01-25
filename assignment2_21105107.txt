@@ -1,0 +1,94 @@
+#Source Code of question 1
+string="Python is a case sensitive language"
+#a)
+a=len(string)
+print("Length of string:",a)
+#b)
+b=string[-1::-1]
+print(" Reverse order of string:",b)
+#c)
+c=string[10:16]
+d=string[16:26]
+newstring=c+d
+newstring=str(newstring)
+print("New String:",c+d)
+#d)
+D=string.replace("a case sensitive","object oriented")
+print("D:",D)
+#e)
+index=string.find('a')
+print("Index of 'a' is=",index)
+#f)
+F=string.replace(" ","")
+F=str(F)
+print("String without space:",F)
+
+
+
+#Source code of question2
+name=input("Enter your name:")
+sid=int(input("Enter your SID:"))
+Department=input("Department:")
+cgpa=float(input("CGPA:"))
+print("Hey,%s Here!\n My SID is %i\nI am from %sdepartment\n and my CGPA is %f"%(name,sid,Department,cgpa))
+
+
+
+#Source Code for question3
+#Binary Code of a=56 is 00111000
+#Binary Code of b=10 is 00001010
+#a)
+a=56
+b=10
+print("The value of a&b:", a&b)
+#b)
+a=56
+b=10
+print("The value of a|b:",a|b)
+#c)
+a=56
+b=10
+print("The value of a^b:",a^b)
+#d)
+a=56
+b=10
+print("The value of a<<2 and b<<2:",(a<<2,b<<2))
+#e)
+a=56
+b=10
+print("The value of a>>2 and b>>4:",(a>>2,b>>4))
+
+
+
+#source code of question4
+num1=int(input("Enter number1:"))
+num2=int(input("Enter number2:"))
+num3=int(input("Enter number3:"))
+if(num1>(num2 and num3)):
+	print("Greatest number is num1")
+elif(num2>num3):
+	print("Greatest number is num2")
+else:
+	print("Greatest number is num3")
+
+
+
+#Source code of question 5
+ABC=input("Enter the string:")
+if (name in ABC):
+	print("Yes")
+else:
+	print("No")
+
+
+
+#Source code of question6
+side1=int(input("side1: "))
+side2=int(input("side2: "))
+side3=int(input("side3: "))
+if side1>side2+side3 or side2>side1+side3 or side3>side2+side1:
+	print("No")
+elif side1==side2==side3==0:
+	print("No")
+else:
+	print("Yes")
